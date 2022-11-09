@@ -7,6 +7,28 @@
   margin: 0 auto;
   padding: 5px;
 }
+.btn {
+  padding: 9px 19px;
+  border: 2px solid #4692c1;
+  background-color: #a2cae3;
+  max-width: 130px;
+  border-radius: 35px;
+  margin: 19px 0;
+}
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #4692c1;
+  transition: all 0.7s;
+  border: 2px solid #4692c1;
+}
+.btn-orange span {
+  margin-right: 9px;
+}
+.btn-orange {
+  background-color: rgba(255, 166, 0, 0.837);
+  border: 2px solid orange;
+}
 /* nav */
 nav {
   background-color: aquamarine;
@@ -39,6 +61,31 @@ nav .container .menu .right {
 }
 /* nav */
 
+/* Hero */
+.hero {
+  display: flex;
+  padding: 14px 9px;
+}
+.left-box {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.hero .left-box h2 {
+  font-size: 48px;
+  padding: 0 0 9px;
+}
+.right-box {
+  display: flex;
+  justify-content: center;
+}
+.right-box .bg-img {
+  background-image: url("src/img/Circle\ design.svg");
+  padding: 9px;
+  background-repeat: no-repeat;
+}
+/* Hero */
+
 /* Media query */
 @media (min-width: 300px) {
   nav .container .logo {
@@ -47,6 +94,16 @@ nav .container .menu .right {
   }
   nav .container .menu {
     display: none;
+  }
+  .left-box {
+    text-align: center;
+  }
+  .hero {
+    text-align: center;
+    flex-direction: column;
+  }
+  .btn {
+    margin: 10px auto;
   }
 }
 @media (min-width: 768px) {
@@ -65,4 +122,14 @@ nav .container .menu .right {
   nav .container .menu .right {
     display: block;
   }
+  .hero {
+    flex-direction: row;
+  }
+  .left-box {
+    text-align: left;
+  }
+  .btn {
+    margin: 10px 0;
+  }
 }
+/* Media query */
