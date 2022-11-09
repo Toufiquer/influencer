@@ -83,8 +83,19 @@ nav .container .menu .right {
   background-image: url("src/img/Circle\ design.svg");
   padding: 9px;
   background-repeat: no-repeat;
+  width: 100%;
 }
 /* Hero */
+
+/* Logo */
+.company-logo {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 14px 9px;
+}
+/* Logo */
 
 /* Media query */
 @media (min-width: 300px) {
