@@ -56,8 +56,10 @@ nav .container .menu .left ul a {
 nav .container .menu .left ul a:hover {
   text-decoration: underline;
 }
-nav .container .menu .right {
+nav .container .right {
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 /* nav */
 
@@ -81,18 +83,21 @@ nav .container .menu .right {
   align-items: center;
   justify-content: center;
   margin: 40px 0;
+  min-width: 320px;
 }
 .right-box-img {
   position: relative;
+  width: 100%;
 }
 .right-box .camera-bg {
   z-index: -1;
   position: absolute;
+  width: 100%;
 }
-.right-box .bg-img {
-  z-index: 2;
-  position: absolute;
+.right-box .camera-img {
+  width: 100%;
 }
+
 /* Hero */
 
 /* Company Logo */
@@ -157,6 +162,34 @@ nav .container .menu .right {
   text-decoration: underline;
 }
 /* Collection */
+
+/* Footer */
+footer {
+  background-color: #4692c1;
+  padding: 40px;
+  text-align: center;
+}
+footer h2 {
+  font-size: 38px;
+  font-weight: 700;
+  padding: 9px 0;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .link {
+  margin-top: 9px;
+  font-size: 28px;
+}
+footer .link i {
+  padding: 9px;
+}
+footer .link i:hover {
+  color: wheat;
+  cursor: pointer;
+}
+/* Footer */
 
 /* Media query */
 @media (min-width: 300px) {
